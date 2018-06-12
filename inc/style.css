@@ -1,0 +1,148 @@
+body {
+    background: rgb(204,204,204); 
+  }
+  page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  }
+  page[size="A4"] {  
+    max-width: 21cm;
+    width:100%;
+    height: 29.7cm; 
+  }
+  page[size="A4"][layout="portrait"] {
+    max-width: 29.7cm;
+    width:100%;
+    height: 21cm;  
+  }
+  page[size="A3"] {
+    width: 29.7cm;
+    height: 42cm;
+  }
+  page[size="A3"][layout="portrait"] {
+    width: 42cm;
+    height: 29.7cm;  
+  }
+  page[size="A5"] {
+    width: 14.8cm;
+    height: 21cm;
+  }
+  page[size="A5"][layout="portrait"] {
+    width: 21cm;
+    height: 14.8cm;  
+  }
+  @media print {
+    body, page {
+      margin: 0;
+      box-shadow: 0;
+    }
+  }
+
+body {
+    font-family: 'arial';
+}
+
+
+.row.top h1{
+    width:auto;
+}
+
+.col.left {
+    padding-top:50px;
+    width:33%;
+    float: left;
+    padding-left:30px;
+    padding-right:30px;
+    background: #efefef;
+    height:1072px;
+}
+
+.image {
+    text-align:center;
+    padding-bottom:50px;
+}
+
+.image img {width:60%;
+margin:0 auto;
+}
+
+.contact.sub-title, .profile.sub-title, .education.sub-title, .interests.sub-title {
+    margin-top: 50px;
+}
+
+.col.right {
+    padding-top:50px;
+    float: left;
+    width: 50%;
+    padding-left: 30px;
+}
+
+.sub-title{
+    border-top:2px solid #565656;
+    border-bottom :2px solid #565656;
+    color:#565656;
+}
+
+.sub-title h3 {
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.text {
+    color:#666666;
+}
+
+.far, .fab {
+    padding-right:5px;
+}
+
+a {
+    color:#666666;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#565656 !Important;
+    text-decoration: none;
+}
+
+.copy {
+    font-size: 10px;
+    position: inherit;
+    padding-top: 205px;
+}
+
+
+.meter { 
+	height: 5px;  /* Can be anything */
+	position: relative;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 5px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.meter > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color:rgb(255, 255, 255);
+    background-image: linear-gradient(
+      center bottom,
+      rgb(43,194,83) 37%,
+      rgb(84,240,84) 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+  }
